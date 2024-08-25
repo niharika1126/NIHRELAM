@@ -1,0 +1,131 @@
+body {
+    background-image: url("https://i.pinimg.com/736x/dc/d3/cc/dcd3ccbea3a2d80c282556f683251e86.jpg");
+    background-size: cover;
+    opacity: 0.8;
+    margin: 0;
+    font-family: 'Calibri', sans-serif;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-size: 25px;
+    border-bottom: 2px solid white;
+    letter-spacing: 1.5px;
+}
+
+nav input {
+    height: 40px;
+    width: 300px;
+    padding-top: 2px;
+    padding-bottom: 1px;
+}
+
+nav button {
+    height: 49px;
+    width: 100px;
+    font-size: 20px;
+    color: white;
+    background-color: #22DD22;
+    padding-top: 10px;
+    border-radius: 10%;
+    border: none;
+}
+
+section h2 {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+
+.moviecontainer {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.movie-poster img {
+    height: 450px;
+    margin-right: 30px;
+    border-radius: 5px 0 0 5px;
+}
+
+.movie-info {
+    padding-inline: 15px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.movie-info h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 20px 0 12px 0;
+    font-weight: 600;
+}
+
+.movie-info h2 + p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.movie-info .movie-genre {
+    display: flex;
+    justify-content: center;
+    margin-block: 5px;
+}
+
+.movie-info .movie-genre p {
+    background-color: white;
+    color: #111;
+    padding: 5px 14px;
+    margin-inline: 5px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.movie-info p {
+    font-size: 18px;
+    margin-block: 16px;
+    line-height: 24px;
+}
+
+/* Responsive Code */
+@media screen and (max-width: 950px) {
+    .moviecontainer {
+        flex-direction: column;
+    }
+    .movie-poster img {
+        width: 100%;
+        height: fit-content;
+        margin-right: 0;
+        height: 350px;
+    }
+    .movie-info {
+        padding-inline: 30px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-container {
+        margin-top: 12px;
+    }
+}
