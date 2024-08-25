@@ -59,7 +59,8 @@ moviecontainer.appendChild(movieElement);
 
 // Function to display error message
 const showerrormessage=(message)=>{
-	moviecontainer.innerHTML=`<h2>${message}</h2`;
+	moviecontainer.innerHTML= `<h2>${message}</h2>`;
+;
 }
 // Adding event listeners to form 
 
